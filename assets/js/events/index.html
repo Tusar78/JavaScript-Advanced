@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css" />
     <title>JavaScript Events</title>
-</head>
-<body>
-    
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="events w-full flex justify-center pt-16 pb-16">
+      <div class="container-fluid">
+        <div class="events__List space-y-16">
+          <div class="events__item">
+            <h2 class="events__title text-6xl font-bold text-purple-400 pb-8">
+              Inline Event
+            </h2>
+            <div class="events__buttons flex gap-8">
+              <button
+                class="button--one py-2 px-4 bg-green-700 text-3xl font-medium text-gray-100 rounded-xl"
+                id="button_one"
+              >
+                Greeting
+              </button>
+              <button class="button--two py-2 px-4 bg-blue-400 text-3xl font-medium text-gray-100 rounded-xl" id="button_two">
+                Greeting again
+              </button>
+            </div>
+          </div>
+          <div class="events__item">
+            <h2 class="events__title text-6xl font-bold text-purple-400 pb-8">
+              Dom Event Handler
+            </h2>
+            <div class="events__buttons flex gap-8">
+              <button
+                class="button--one py-2 px-4 bg-green-700 text-3xl font-medium text-gray-100 rounded-xl"
+                id="button_one"
+              >
+                Greeting
+              </button>
+              <button class="button--two py-2 px-4 bg-blue-400 text-3xl font-medium text-gray-100 rounded-xl" id="button_two">
+                Greeting again
+              </button>
+            </div>
+          </div>
+          <div class="events__item">
+            <h2 class="events__title text-6xl font-bold text-purple-400 pb-8">
+              addEventListener handler
+            </h2>
+            <div class="events__buttons flex gap-8">
+              <button
+                class="button--one py-2 px-4 bg-green-700 text-3xl font-medium text-gray-100 rounded-xl"
+                id="button_one"
+              >
+                Greeting
+              </button>
+              <button class="button--two py-2 px-4 bg-blue-400 text-3xl font-medium text-gray-100 rounded-xl" id="button_two">
+                Greeting again
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
