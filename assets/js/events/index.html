@@ -11,56 +11,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section class="events w-full flex justify-center pt-16 pb-16">
+    <section class="events">
       <div class="container-fluid">
-        <div class="events__List space-y-16">
+        <div class="events__List">
+          <!-- Inline Events -->
           <div class="events__item">
-            <h2 class="events__title text-6xl font-bold text-purple-400 pb-8">
-              Inline Event
-            </h2>
-            <div class="events__buttons flex gap-8">
+            <h2 class="events__title">Inline Event</h2>
+            <div class="events__buttons">
               <button
-                class="button--one py-2 px-4 bg-green-700 text-3xl font-medium text-gray-100 rounded-xl"
+                class="button--one btn"
                 id="button_one"
+                onclick="alert('This is Inline')"
               >
                 Greeting
               </button>
-              <button class="button--two py-2 px-4 bg-blue-400 text-3xl font-medium text-gray-100 rounded-xl" id="button_two">
-                Greeting again
-              </button>
-            </div>
-          </div>
-          <div class="events__item">
-            <h2 class="events__title text-6xl font-bold text-purple-400 pb-8">
-              Dom Event Handler
-            </h2>
-            <div class="events__buttons flex gap-8">
               <button
-                class="button--one py-2 px-4 bg-green-700 text-3xl font-medium text-gray-100 rounded-xl"
-                id="button_one"
+                class="button--two btn"
+                id="button_two"
+                ondblclick="document.getElementById('demo').innerText = Date()"
+                ;
               >
-                Greeting
-              </button>
-              <button class="button--two py-2 px-4 bg-blue-400 text-3xl font-medium text-gray-100 rounded-xl" id="button_two">
                 Greeting again
               </button>
             </div>
-          </div>
-          <div class="events__item">
-            <h2 class="events__title text-6xl font-bold text-purple-400 pb-8">
-              addEventListener handler
-            </h2>
-            <div class="events__buttons flex gap-8">
-              <button
-                class="button--one py-2 px-4 bg-green-700 text-3xl font-medium text-gray-100 rounded-xl"
-                id="button_one"
-              >
-                Greeting
-              </button>
-              <button class="button--two py-2 px-4 bg-blue-400 text-3xl font-medium text-gray-100 rounded-xl" id="button_two">
-                Greeting again
-              </button>
-            </div>
+            <p id="demo"></p>
           </div>
         </div>
       </div>
