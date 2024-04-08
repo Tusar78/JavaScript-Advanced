@@ -13,28 +13,57 @@
   <body>
     <section class="events">
       <div class="container-fluid">
-        <div class="events__List">
+        <div class="events__List space-y-24">
           <!-- Inline Events -->
-          <div class="events__item">
+          <div class="event__item">
             <h2 class="events__title">Inline Event</h2>
-            <div class="events__buttons">
-              <button
-                class="button--one btn"
-                id="button_one"
-                onclick="alert('This is Inline')"
-              >
-                Greeting
+            <div class="events__buttons flex-wrap">
+              <button class="btn" onclick="console.log(`Hello World`)">
+                onclick
               </button>
-              <button
-                class="button--two btn"
-                id="button_two"
-                ondblclick="document.getElementById('demo').innerText = Date()"
-                ;
-              >
-                Greeting again
+              <button class="btn" oncontextmenu="console.log(`Hello World`)">
+                oncontextmenu
+              </button>
+              <button class="btn" ondblclick="console.log(`Hello World`)">
+                ondblclick
+              </button>
+              <button class="btn" onmousedown="console.log(`Hello World`)">
+                onmousedown
+              </button>
+              <button class="btn" onmouseover="console.log(`Hello World`)">
+                onmouseover
+              </button>
+              <button class="btn" onmouseup="console.log(`Hello World`)">
+                onmouseup
+              </button>
+              <button class="btn" onmouseenter="console.log(`Hello World`)">
+                onmouseenter
+              </button>
+              <button class="btn" onmouseleave="console.log(`Hello World`)">
+                onmouseleave
+              </button>
+              <button class="btn" onmouseout="console.log(`Hello World`)">
+                onmouseout
+              </button>
+              <button class="btn" onmousemove="console.log(`Hello World`)">
+                onmousemove
               </button>
             </div>
             <p id="demo"></p>
+          </div>
+
+          <div class="event__item">
+            <h2 class="events__title">Dom Event Handler</h2>
+            <div class="events__buttons flex-wrap">
+              <button class="btn" id="btnOne">onclick</button>
+            </div>
+          </div>
+
+          <div class="event__item">
+            <h2 class="events__title">addEventListener</h2>
+            <div class="events__buttons flex-wrap">
+              <button class="btn" id="btn1">onclick</button>
+            </div>
           </div>
         </div>
       </div>
